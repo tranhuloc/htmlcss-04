@@ -7,7 +7,7 @@
     --desc-color: #656689;
     --btn-color: #FF5B2E;
     --bg-color: #fefaf5;
-    --second-bg-color: #FFF6ED;
+    --second-bg-color: #FFFAF5;
 }
 
 html,
@@ -130,3 +130,127 @@ a {
     color: #fff;
     background-color: var(--primary-color);
 }
+
+/* =============================== Hero =============================== */
+.hero {
+    margin-top: 74px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    position: relative;
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    border: 3px solid #fff;
+    border-radius: 16px;
+    background-color: #FE997B;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__decor-right {
+    top: 16px;
+    right: -43px;
+}
+
+.hero__img-wrap-small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    margin: 0 0 -58px -24px;
+    border: 2px solid #f7dddf;
+    background-color: #FAA7AD;
+}
+
+.hero__list {
+    position: absolute;
+    bottom: 0;
+    left: 129px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    padding: 18px 14px;
+    background-color: #fff;
+    box-shadow: -17px 14px 68px -4px #CFAE8440;
+}
+
+.hero-list-item {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.hero-list-item__infor {
+    margin-left: 10px;
+}
+
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #FEC23F;
+}
+
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background-color: #C6E2FA;
+}
+
+.hero-list-item__title {
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #181E52;
+}
+
+.hero-list-item__skeleton {
+    width: 118px;
+    height: 4px;
+    margin-top: 6px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    opacity: 0.08;
+}
+
+.hero-list-item__skeleton:nth-of-type(2) {
+    width: 39px; 
+}
+
+.hero-list-item__separate {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    border-radius: 99px;
+    background-color: #F2F2F2;
+}
+
+
