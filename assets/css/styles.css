@@ -82,6 +82,22 @@ a {
     margin-left: 10px;
     border-radius: 50%;
     background-color: #FFF;
+    box-shadow: 4px 3px 10px -1px #BF290066;
+}
+
+.section-heading {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+    color: var(--primary-color);
+}
+
+.section-desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    color: var(--desc-color);
 }
 
 
@@ -332,6 +348,73 @@ a {
 .hero__cta-link:hover {
     cursor: pointer;
     scale: 90%;
+}
+
+/* =============================== About =============================== */
+.about {
+    margin-top: 107px;
+    padding: 100px 0;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__label {
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.about__heading {
+    width: 446px;
+    margin-top: 15px;
+}
+
+.about__desc {
+    width: 431px;
+}
+
+.about__checklist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    margin-top: 54px;
+}
+
+.about__check-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #48496A;
+}
+
+.about__check-item::before,
+.about__check-item::after {
+    content: "";
+    display: inline-block;
+}
+
+.about__check-item::before {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #FF5D31;
+    box-shadow: 0px 4px 15px -3px #FF5D31B0;
+}
+
+.about__check-item::after {
+    content: url(../icons/check.svg);
+    position: absolute;
+    top: 2px;
+    left: 5px;
 }
 
 
